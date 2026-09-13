@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ClariMyth — See What AI Hides</title>
-  <meta name="description" content="ClariMyth reveals what AI systems leave unsaid: hidden assumptions, silent failures, injected instructions and invisible risk. See what AI hides.">
+  <meta name="description" content="ClariMyth is a full-stack AI security platform: real-time guardrails, agent security, AI gateway, red teaming and compliance for every model, prompt and tool call in production. See what AI hides.">
   <link rel="canonical" href="https://clarimyth.ai/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="ClariMyth — See What AI Hides">
-  <meta property="og:description" content="Reveal hidden assumptions, silent failures and invisible risk inside every AI answer.">
+  <meta property="og:description" content="Full-stack AI security: guardrails, agent security, AI gateway, red teaming and compliance. See what AI hides.">
   <meta property="og:url" content="https://clarimyth.ai/">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#070b14">
@@ -120,7 +120,7 @@
     .step h3{font-size:20px;margin-bottom:8px}
     .step p{color:var(--muted);font-size:15px}
 
-    .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin-top:52px}
+    .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px;margin-top:52px}
     .stat{text-align:center;padding:24px;border-radius:var(--radius);border:1px solid var(--line);background:rgba(255,255,255,.02)}
     .stat b{display:block;font-size:34px;letter-spacing:-.02em;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
     .stat span{font-size:14px;color:var(--muted)}
@@ -157,7 +157,8 @@
           <span>Clari<b>Myth</b></span>
         </a>
         <div class="links nav-links">
-          <a href="#hidden">What's hidden</a>
+          <a href="#platform">Platform</a>
+          <a href="#threats">Threats</a>
           <a href="#how">How it works</a>
           <a href="#contact">Contact</a>
         </div>
@@ -169,18 +170,18 @@
   <main id="top">
     <section class="hero">
       <div class="wrap">
-        <div class="eyebrow"><i></i> ClariMyth.ai</div>
+        <div class="eyebrow"><i></i> Full-stack AI security</div>
         <h1><span class="w">See</span> <span class="w">What</span> <span class="w">AI</span> <span class="w">Hides.</span></h1>
-        <p class="sub">Every AI answer carries what it doesn't say: hidden assumptions, silent failures, injected instructions and invisible risk. ClariMyth brings them into the light.</p>
+        <p class="sub">ClariMyth is the security layer for AI in production. Real-time guardrails, agent security and an AI gateway that expose and stop the threats hiding inside every prompt, response and tool call.</p>
         <div class="cta">
           <a class="btn primary" href="#contact">Get early access</a>
-          <a class="btn ghost" href="#how">How it works</a>
+          <a class="btn ghost" href="#platform">Explore the platform</a>
         </div>
 
         <div class="demo" id="demo">
           <div class="demo-bar">
             <div class="dots"><i></i><i></i><i></i></div>
-            <div class="title">assistant · production traffic</div>
+            <div class="title">support-agent · production · ClariMyth Guardrail</div>
             <label class="toggle" for="reveal-toggle"><span>Reveal</span><span class="switch"></span></label>
             <input id="reveal-toggle" type="checkbox" hidden>
           </div>
@@ -194,43 +195,85 @@
             </div></div>
           </div>
           <div class="hidden-layer">
-            <b>ClariMyth found 3 hidden issues</b>
+            <b>ClariMyth Guardrail blocked 3 threats</b>
             <span class="tag"><i style="background:var(--danger)"></i>Hallucinated clause</span>
-            <span class="tag"><i style="background:var(--warn)"></i>Sensitive data leak</span>
-            <span class="tag"><i style="background:var(--accent2)"></i>Prompt injection</span>
+            <span class="tag"><i style="background:var(--warn)"></i>PII leak (DLP)</span>
+            <span class="tag"><i style="background:var(--accent2)"></i>Indirect prompt injection</span>
           </div>
           <div class="demo-hint">Flip <b>Reveal</b> to see what this answer is hiding.</div>
         </div>
       </div>
     </section>
 
-    <section id="hidden">
+    <section id="platform">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="kicker">The platform</div>
+          <h2>One security stack for every AI system.</h2>
+          <p>From a single chatbot to fleets of autonomous agents. ClariMyth covers the full lifecycle: build, deploy, run and prove.</p>
+        </div>
+        <div class="cards">
+          <div class="card reveal">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
+            <h3>Guardrails</h3>
+            <p>Real-time input and output policies: prompt injection, jailbreaks, toxicity, PII, hallucination and off-topic checks. Block, redact or rewrite inline.</p>
+          </div>
+          <div class="card reveal">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg></div>
+            <h3>Agent Security</h3>
+            <p>Govern what agents can do, not just what they say. Tool-call authorization, least-privilege permissions, memory integrity and goal-hijack detection across multi-agent and MCP workflows.</p>
+          </div>
+          <div class="card reveal">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="6" rx="2"/><rect x="3" y="14" width="18" height="6" rx="2"/><path d="M7 7h.01M7 17h.01"/></svg></div>
+            <h3>AI Gateway</h3>
+            <p>A single control plane in front of OpenAI, Anthropic, Google and open-source models. Routing, rate limits, key management and a complete audit trail.</p>
+          </div>
+          <div class="card reveal">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/></svg></div>
+            <h3>Red Teaming &amp; Evaluation</h3>
+            <p>Continuous adversarial testing against the OWASP LLM and Agentic Top 10, with thousands of evolving attack patterns. Find the gap before an attacker does.</p>
+          </div>
+          <div class="card reveal">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 018 0v3"/></svg></div>
+            <h3>Data &amp; Privacy Protection</h3>
+            <p>Detect and stop secrets, PII and confidential context from leaking through prompts, RAG, tool outputs and logs. DLP built for LLM traffic.</p>
+          </div>
+          <div class="card reveal">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19V5M4 19h16"/><path d="M8 15l3-4 3 2 4-6"/></svg></div>
+            <h3>Observability &amp; Compliance</h3>
+            <p>Full traces of every prompt, decision and action. Evidence mapped to the EU AI Act, NIST AI RMF and ISO/IEC 42001, ready for auditors.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="threats">
       <div class="wrap">
         <div class="section-head reveal">
           <div class="kicker">What stays hidden</div>
           <h2>AI is fluent. Fluency hides things.</h2>
-          <p>A confident answer looks the same whether it is right, invented, manipulated or leaking. ClariMyth makes the difference visible.</p>
+          <p>A confident answer looks the same whether it is correct, manipulated, leaking or acting beyond its mandate. ClariMyth makes the difference visible and enforceable.</p>
         </div>
         <div class="cards">
           <div class="card reveal">
-            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l9 16H3l9-16z"/><path d="M12 10v4M12 17h.01"/></svg></div>
-            <h3>Hallucinations as fact</h3>
-            <p>Invented clauses, numbers and citations delivered with total confidence. We trace every claim back to what the model actually saw.</p>
-          </div>
-          <div class="card reveal">
             <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h10M4 17h7"/><path d="M18 14l3 3-3 3"/></svg></div>
-            <h3>Hidden instructions</h3>
-            <p>Prompt injections buried in documents, web pages and tool results that quietly steer the model against your users.</p>
+            <h3>Prompt injection &amp; jailbreaks</h3>
+            <p>Direct and indirect attacks hidden in documents, web pages, emails and tool results that quietly steer the model.</p>
           </div>
           <div class="card reveal">
-            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 018 0v3"/></svg></div>
-            <h3>Silent data exposure</h3>
-            <p>Secrets, PII and internal context slipping into outputs, logs and third-party tools without anyone noticing.</p>
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l9 16H3l9-16z"/><path d="M12 10v4M12 17h.01"/></svg></div>
+            <h3>Excessive agency</h3>
+            <p>Agents that call the wrong tool, escalate their own permissions, or take irreversible actions nobody approved.</p>
+          </div>
+          <div class="card reveal">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3a9 9 0 100 18 9 9 0 000-18z"/><path d="M8 12h8M12 8v8"/></svg></div>
+            <h3>Data leakage</h3>
+            <p>Secrets, PII and internal context slipping into outputs, memories and third-party tools without anyone noticing.</p>
           </div>
           <div class="card reveal">
             <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 17l5-6 4 4 5-8 4 5"/><path d="M3 21h18"/></svg></div>
-            <h3>Unseen bias and drift</h3>
-            <p>Behavior that shifts across versions, prompts and populations. We surface the change before your customers do.</p>
+            <h3>Hallucination, bias &amp; drift</h3>
+            <p>Invented facts and behavior that shifts across model versions, prompts and user populations. Surfaced before customers see it.</p>
           </div>
         </div>
       </div>
@@ -241,17 +284,18 @@
         <div class="section-head reveal">
           <div class="kicker">How it works</div>
           <h2>From black box to glass box.</h2>
-          <p>Three steps. No model retraining, no rewrite of your application.</p>
+          <p>Deploy in minutes as a gateway, SDK or sidecar. No model retraining, no rewrite of your application.</p>
         </div>
         <div class="steps">
-          <div class="step reveal"><div class="n">01 · OBSERVE</div><h3>Plug into your AI traffic</h3><p>One gateway or SDK line captures prompts, context, tool calls and responses across every model you use.</p></div>
-          <div class="step reveal"><div class="n">02 · REVEAL</div><h3>Expose what's not said</h3><p>Every response is checked for unsupported claims, injected instructions, leaked data and unexpected behavior, in real time.</p></div>
-          <div class="step reveal"><div class="n">03 · ACT</div><h3>Block, alert, explain</h3><p>Enforce policies inline, alert your team, and hand auditors a clear record of what the AI did and why.</p></div>
+          <div class="step reveal"><div class="n">01 · OBSERVE</div><h3>Plug into your AI traffic</h3><p>One gateway or SDK line captures prompts, context, tool calls, agent actions and responses across every model and framework you use.</p></div>
+          <div class="step reveal"><div class="n">02 · PROTECT</div><h3>Enforce policy in real time</h3><p>Guardrails inspect every prompt and response; agent policies authorize every tool call. Threats are blocked, redacted or escalated in milliseconds.</p></div>
+          <div class="step reveal"><div class="n">03 · PROVE</div><h3>Show your work</h3><p>Continuous red teaming validates your defenses, and a complete audit trail shows regulators and customers what the AI did and why.</p></div>
         </div>
         <div class="stats reveal">
           <div class="stat"><b>&lt;50 ms</b><span>added latency per response</span></div>
           <div class="stat"><b>Any model</b><span>OpenAI, Anthropic, Google, open-source</span></div>
-          <div class="stat"><b>Zero</b><span>changes to your prompts or weights</span></div>
+          <div class="stat"><b>Any agent</b><span>LangChain, OpenAI Agents, MCP, custom</span></div>
+          <div class="stat"><b>Zero</b><span>changes to prompts or model weights</span></div>
         </div>
       </div>
     </section>
@@ -260,8 +304,8 @@
       <div class="wrap">
         <div class="final reveal">
           <div class="kicker">Early access</div>
-          <h2>Stop trusting AI blindly.</h2>
-          <p>We're onboarding a small group of teams running AI in production. Tell us what you're building and we'll show you what it's hiding.</p>
+          <h2>Ship AI with confidence, not hope.</h2>
+          <p>We're onboarding a small group of teams running LLM apps and agents in production. Tell us what you're building and we'll show you what it's hiding.</p>
           <a class="btn primary" href="mailto:hello@clarimyth.ai?subject=ClariMyth%20early%20access">hello@clarimyth.ai</a>
         </div>
       </div>
@@ -270,9 +314,10 @@
 
   <footer>
     <div class="wrap">
-      <div>© <span id="year"></span> ClariMyth · clarimyth.ai</div>
+      <div>© <span id="year"></span> ClariMyth · AI Security · clarimyth.ai</div>
       <div class="links">
-        <a href="#hidden">What's hidden</a>
+        <a href="#platform">Platform</a>
+        <a href="#threats">Threats</a>
         <a href="#how">How it works</a>
         <a href="mailto:hello@clarimyth.ai">Contact</a>
       </div>
